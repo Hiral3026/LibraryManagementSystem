@@ -1,0 +1,11 @@
+﻿@model LibraryManagementProject.Models.BookDto
+@{
+    ViewBag.Title = "View";
+}
+
+<a href="/Book/List">Go back to list</a>
+<h2>@Model.Title</h2>
+<div>Author Name: @Model.Author</div>
+<div>Book Category: @Model.Category</div>
+<div>Available Copies: @Model.AvailableCopy</div>
+

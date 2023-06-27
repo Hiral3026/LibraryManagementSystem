@@ -1,0 +1,12 @@
+﻿@model IEnumerable<LibraryManagementProject.Models.BookDto>
+@{
+    ViewBag.Title = "List of books";
+}
+
+<h2>List</h2>
+<a href="/Book/New">Go back to Add Book</a>
+@foreach (var book in Model)
+{
+    <h2><a href="/Book/Details/@book.BookId">Title: @book.Title</a></h2>
+  
+}
